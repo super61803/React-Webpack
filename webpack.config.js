@@ -5,7 +5,7 @@ module.exports = (env, argv) => {
   const isProduction = argv.mode === "production";
 
   return {
-    entry: path.resolve(__dirname, "src/index.js"),
+    entry: path.resolve(__dirname, "src/index.tsx"),
     output: {
       path: path.resolve(__dirname, "build"),
       filename: isProduction
@@ -15,12 +15,12 @@ module.exports = (env, argv) => {
       publicPath: "/",
     },
     resolve: {
-      extensions: [".js", ".jsx"],
+      extensions: [".tsx", ".ts", ".js", ".jsx"],
     },
     module: {
       rules: [
         {
-          test: /\.(js|jsx)$/,
+          test: /\.(ts|tsx|js|jsx)$/,
           exclude: /node_modules/,
           use: "babel-loader",
         },
