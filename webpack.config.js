@@ -29,6 +29,26 @@ module.exports = (env, argv) => {
           use: ["style-loader", "css-loader"],
         },
         {
+          test: /\.module\.s[ac]ss$/i,
+          use: [
+            "style-loader",
+            {
+              loader: "css-loader",
+              options: {
+                modules: {
+                  localIdentName: "[name]__[local]--[hash:base64:5]",
+                },
+              },
+            },
+            "sass-loader",
+          ],
+        },
+        {
+          test: /\.s[ac]ss$/i,
+          exclude: /\.module\.s[ac]ss$/i,
+          use: ["style-loader", "css-loader", "sass-loader"],
+        },
+        {
           test: /\.(png|jpe?g|gif|svg|ico|woff2?|eot|ttf|otf)$/i,
           type: "asset",
         },
