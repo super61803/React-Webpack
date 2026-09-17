@@ -10,6 +10,7 @@
   "scripts": {
     "start": "webpack serve --mode development",
     "build": "webpack --mode production",
+    "clean": "node ./scripts/clean.js",
     "typecheck": "tsc --noEmit"
   },
   "browserslist": {
