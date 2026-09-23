@@ -1,0 +1,28 @@
+@use "../styles/variables" as *;
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: $space-md;
+}
+
+.item {
+  padding: $space-md;
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius;
+}
+
+.title {
+  margin: 0 0 $space-sm;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.description {
+  margin: 0;
+  color: $color-muted;
+  font-size: 0.95rem;
+}

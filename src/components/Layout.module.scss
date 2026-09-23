@@ -2,30 +2,62 @@
 
 .layout {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  border-bottom: 1px solid $color-border;
+  background: $color-surface;
+}
+
+.headerInner {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: $space-md $space-lg;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: $space-md;
+}
+
+.brand {
+  font-weight: 700;
+  color: $color-text;
+  text-decoration: none;
 }
 
 .nav {
   display: flex;
   gap: $space-md;
-  padding: $space-md;
-  border-bottom: 1px solid #ddd;
 }
 
 .link {
-  color: $color-text;
+  color: $color-muted;
   text-decoration: none;
   font-weight: 500;
 
   &:hover {
-    text-decoration: underline;
+    color: $color-text;
   }
 }
 
 .active {
-  font-weight: 700;
-  text-decoration: underline;
+  color: $color-accent;
 }
 
 .main {
-  padding: $space-md;
+  flex: 1;
+  max-width: $max-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: $space-lg;
+}
+
+.footer {
+  border-top: 1px solid $color-border;
+  padding: $space-md $space-lg;
+  text-align: center;
+  color: $color-muted;
+  font-size: 0.875rem;
 }

@@ -1,0 +1,25 @@
+@use "../styles/variables" as *;
+
+.stack {
+  display: grid;
+  gap: $space-md;
+}
+
+.panel {
+  margin: 0;
+  padding: $space-md;
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius;
+  color: $color-muted;
+}
+
+.code {
+  margin: 0;
+  padding: $space-md;
+  background: #111;
+  color: #f5f5f5;
+  border-radius: $radius;
+  font-size: 0.9rem;
+  overflow-x: auto;
+}

@@ -1,0 +1,21 @@
+@use "../styles/variables" as *;
+
+.panel {
+  padding: $space-lg;
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius;
+  text-align: center;
+}
+
+.code {
+  display: block;
+  margin-bottom: $space-md;
+  font-size: 3rem;
+  font-weight: 700;
+  color: $color-accent;
+}
+
+.link {
+  font-weight: 600;
+}

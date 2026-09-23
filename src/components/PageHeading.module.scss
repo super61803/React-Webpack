@@ -1,0 +1,13 @@
+@use "../styles/variables" as *;
+
+.heading {
+  margin: 0 0 $space-sm;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.lead {
+  margin: 0 0 $space-lg;
+  color: $color-muted;
+  font-size: 1.05rem;
+}

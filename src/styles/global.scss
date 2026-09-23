@@ -1,9 +1,20 @@
 @use "./variables" as *;
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
   font-family: $font-stack;
   color: $color-text;
   background-color: $color-background;
+  line-height: 1.5;
+}
+
+a {
+  color: $color-accent;
 }

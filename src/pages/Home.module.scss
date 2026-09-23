@@ -1,0 +1,30 @@
+@use "../styles/variables" as *;
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $space-md;
+  margin-top: $space-lg;
+}
+
+.primary {
+  display: inline-block;
+  padding: $space-sm $space-md;
+  background: $color-accent;
+  color: #fff;
+  text-decoration: none;
+  border-radius: $radius;
+  font-weight: 600;
+
+  &:hover {
+    filter: brightness(0.95);
+  }
+}
+
+.secondary {
+  display: inline-block;
+  padding: $space-sm $space-md;
+  color: $color-accent;
+  text-decoration: none;
+  font-weight: 600;
+}
